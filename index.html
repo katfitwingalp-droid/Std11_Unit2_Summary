@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الْوَحْدَةُ الثَّانِيَةُ - Plus One Arabic Unit 2 Summary</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&family=Manjari:wght@400;700&display=swap');
+:root {
+  --primary: #0D47A1;
+  --secondary: #1565C0;
+  --accent: #FF6F00;
+  --soft: #E3F2FD;
+  --card-bg: #ffffff;
+  --border: #90CAF9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(160deg, #E3F2FD 0%, #BBDEFB 30%, #E8F5E9 60%, #FFF8E1 100%);
+  color: #1a1a1a;
+  line-height: 1.8;
+  padding: 20px;
+  min-height: 100vh;
+}
+.created-by {
+  text-align: center;
+  background: linear-gradient(90deg, #004D40, #00695C);
+  color: #fff;
+  padding: 10px 16px;
+  font-family: 'Manjari', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: -20px -20px 0;
+  letter-spacing: 0.5px;
+}
+.pdf-download-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #0D47A1, #1565C0);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.28);
+  margin: 0 -20px 22px;
+  border-radius: 0 0 16px 16px;
+}
+.pdf-btn {
+  background: linear-gradient(135deg, #ffca28, #f5a623);
+  color: #1a1a1a;
+  border: none;
+  padding: 13px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  transition: transform .2s;
+}
+.pdf-btn:hover { transform: scale(1.05); }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255,255,255,.94);
+  border-radius: 24px;
+  padding: 28px 24px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.12);
+  border: 4px solid #fff;
+}
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  border-bottom: 3px dashed #64B5F6;
+}
+.unit-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #0D47A1, #1565C0);
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: .95rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.main-title {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  font-size: 2rem;
+  color: #0D47A1;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.sub-title {
+  font-family: 'Manjari', sans-serif;
+  font-size: 1.15rem;
+  color: #1565C0;
+  margin-bottom: 8px;
+}
+.theme-tag {
+  display: inline-block;
+  background: #FFF3E0;
+  color: #E65100;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid #FFB74D;
+  margin-top: 6px;
+}
+.section {
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 22px 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  border: 3px solid #E3F2FD;
+}
+.section-title {
+  font-family: 'Amiri', serif;
+  font-size: 1.35rem;
+  color: #0D47A1;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #90CAF9;
+  padding-bottom: 8px;
+}
+.lesson-card {
+  background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 16px;
+  border: 2px solid #64B5F6;
+  transition: transform .2s;
+}
+.lesson-card:hover { transform: translateY(-3px); }
+.lesson-num {
+  display: inline-block;
+  background: #0D47A1;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.lesson-title-ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.3rem;
+  color: #0D47A1;
+  font-weight: 700;
+}
+.lesson-title-ml {
+  font-family: 'Manjari', sans-serif;
+  font-size: .95rem;
+  color: #37474F;
+  margin-top: 4px;
+}
+.lesson-type {
+  display: inline-block;
+  background: #1565C0;
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: .8rem;
+  margin-top: 6px;
+}
+.summary-text {
+  font-family: 'Manjari', sans-serif;
+  font-size: .95rem;
+  color: #37474F;
+  margin-top: 10px;
+  line-height: 1.75;
+}
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.vocab-item {
+  background: #E3F2FD;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #90CAF9;
+}
+.vocab-ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.15rem;
+  color: #0D47A1;
+  font-weight: 700;
+}
+.vocab-en {
+  font-size: .8rem;
+  color: #546E7A;
+}
+.vocab-ml {
+  font-family: 'Manjari', sans-serif;
+  font-size: .8rem;
+  color: #37474F;
+  font-weight: 600;
+}
+.values-box {
+  background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+  border-radius: 14px;
+  padding: 16px;
+  border: 2px solid #FFB74D;
+  margin-top: 12px;
+}
+.values-box h4 {
+  font-family: 'Manjari', sans-serif;
+  color: #E65100;
+  margin-bottom: 8px;
+}
+.values-list {
+  font-family: 'Manjari', sans-serif;
+  font-size: .95rem;
+  color: #BF360C;
+  line-height: 1.85;
+}
+.activity-preview {
+  background: #E8F5E9;
+  border-radius: 12px;
+  padding: 11px 15px;
+  margin: 8px 0;
+  border-right: 5px solid #43A047;
+  font-family: 'Manjari', sans-serif;
+  font-size: .9rem;
+}
+.model-box {
+  background: #E3F2FD;
+  border: 2px solid #90CAF9;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-top: 10px;
+  font-size: .95rem;
+  line-height: 1.8;
+}
+.model-label {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 700;
+  color: #0D47A1;
+  font-size: .85rem;
+  margin-bottom: 4px;
+}
+.footer-note {
+  text-align: center;
+  margin-top: 30px;
+  padding: 18px;
+  background: linear-gradient(90deg, #0D47A1, #1565C0);
+  color: #fff;
+  border-radius: 16px;
+  font-family: 'Manjari', sans-serif;
+}
+.footer-note p { margin: 4px 0; }
+.highlight {
+  background: #FFF9C4;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.ml { font-family: 'Manjari', sans-serif; }
+.ar { font-family: 'Amiri', 'Noto Naskh Arabic', serif; }
+table.simple {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: .88rem;
+}
+table.simple th {
+  background: #0D47A1;
+  color: #fff;
+  padding: 8px;
+}
+table.simple td {
+  border: 1px solid #90CAF9;
+  padding: 7px;
+  text-align: center;
+}
+table.simple tr:nth-child(even) { background: #E3F2FD; }
+@media print {
+  .pdf-download-bar, .created-by { display: none; }
+  body { background: #fff; padding: 0; }
+  .container { box-shadow: none; border: none; }
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="created-by">Created By KATF STATE IT WING</div>
+<div class="pdf-download-bar">
+  <button class="pdf-btn" onclick="downloadSummaryPDF()">📥 Download PDF · ഡൗൺലോഡ്</button>
+</div>
+
+<div class="container" id="summaryContent">
+  <div class="header">
+    <div class="unit-badge">PLUS ONE · UNIT 2 · الْوَحْدَةُ الثَّانِيَةُ</div>
+    <h1 class="main-title ar">الْوَحْدَةُ الثَّانِيَةُ</h1>
+    <h2 class="sub-title ml">ഇച്ഛാശക്തി · മാതൃക · നിയമം · Willpower · Uniqueness · Law</h2>
+    <div class="theme-tag ml">💪 ശക്തമായ ഇച്ഛാശക്തി · മാതൃകാ വ്യക്തിത്വം · നിയമത്തിന്റെ ആവശ്യകത 💪</div>
+  </div>
+
+  <!-- UNIT OVERVIEW -->
+  <div class="section">
+    <h2 class="section-title ar">📋 إِطَارُ الْوَحْدَةِ · യൂണിറ്റ് അവലോകനം</h2>
+    <div class="ml" style="font-size:1rem;line-height:1.9;">
+      <p><b>Unit:</b> الْوَحْدَةُ الثَّانِيَةُ (Second Unit)</p>
+      <p><b>Lessons:</b> 3</p>
+      <p>1. عَالَمٌ بِلَا قَانُونٍ (قصة) – A World Without Law</p>
+      <p>2. أَنْتَ الْمُمَيَّزُ (خطبة) – You Are the Distinguished</p>
+      <p>3. يَقْظَةُ الرُّوحِ (سيرة ذاتية) – Wakefulness of the Spirit</p>
+      <p><b>Core Message:</b> ഇച്ഛാശക്തിയും അധ്വാനവും കൊണ്ട് ഏത് വെല്ലുവിളിയെയും മറികടക്കാം. നിയമമില്ലാത്ത ലോകം കുഴപ്പമാണ്. ഓരോരുത്തരും മാതൃകാ വ്യക്തിത്വമാകണം.</p>
+    </div>
+  </div>
+
+  <!-- LESSON 1: عالم بلا قانون -->
+  <div class="section">
+    <h2 class="section-title ar">📖 الدَّرْسُ الرَّابِعُ</h2>
+    <div class="lesson-card" style="background:linear-gradient(135deg,#E8F5E9,#C8E6C9);border-color:#81C784;">
+      <span class="lesson-num" style="background:#2E7D32;">1</span>
+      <span class="lesson-title-ar ar" style="color:#2E7D32;">عَالَمٌ بِلَا قَانُونٍ</span>
+      <div class="lesson-title-ml ml">നിയമമില്ലാത്ത ലോകം · A World Without Law</div>
+      <div class="lesson-type" style="background:#2E7D32;">قِصَّةٌ · Story by د. وفاء الشامسي</div>
+      <div class="summary-text ml">
+        അഹ്മദ് സ്കൂളിലെ നിയമങ്ങളും ക്യൂവും സിഗ്നലുകളും ഇഷ്ടപ്പെടുന്നില്ല. ഒരു ദിവസം അയാൾ ഒരു “മിറർ ഓഫ് ഡ്രീംസ്” കാണുകയും നിയമമില്ലാത്ത ലോകത്തേക്ക് പോകാൻ ആഗ്രഹിക്കുകയും ചെയ്യുന്നു. ആ ലോകത്തിൽ മാലിന്യം, ട്രാഫിക് കുഴപ്പം, ക്യൂ ഇല്ലാത്ത അരാജകത്വം... അഹ്മദ് മനസ്സിലാക്കുന്നു: <b>നിയമമില്ലാത്ത ലോകം സ്വർഗ്ഗമല്ല, നരകമാണ്</b>. അമ്മയുടെ ശബ്ദം കേട്ട് ഉണരുന്നു – അത് ഒരു കനവായിരുന്നു.
+      </div>
+
+      <h4 class="ml" style="margin-top:14px;color:#0D47A1;">📚 പ്രധാന വാക്കുകൾ · Vocabulary</h4>
+      <div class="vocab-grid">
+        <div class="vocab-item"><div class="vocab-ar ar">قَانُونٌ</div><div class="vocab-en">Law / Rule</div><div class="vocab-ml">നിയമം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">طَابُورٌ</div><div class="vocab-en">Queue</div><div class="vocab-ml">ക്യൂ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">فُسْحَةٌ</div><div class="vocab-en">Interval / Break</div><div class="vocab-ml">ഇടവേള</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">إِشَارَةُ الْمُرُورِ</div><div class="vocab-en">Traffic Signal</div><div class="vocab-ml">ട്രാഫിക് സിഗ്നൽ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">قُمَامَةٌ</div><div class="vocab-en">Garbage</div><div class="vocab-ml">മാലിന്യം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">رَمْيُ الْمُخَلَّفَاتِ</div><div class="vocab-en">Waste Disposal</div><div class="vocab-ml">മാലിന്യ നിർമ്മാർജ്ജനം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مَدِينَةُ الْأَلْعَابِ</div><div class="vocab-en">Amusement Park</div><div class="vocab-ml">അമ്യൂസ്‌മെന്റ് പാർക്ക്</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">التَّدَافُعُ</div><div class="vocab-en">Stampede</div><div class="vocab-ml">തിക്കും തിരക്കും</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مِرْآةُ الْأَحْلَامِ</div><div class="vocab-en">Mirror of Dreams</div><div class="vocab-ml">സ്വപ്നങ്ങളുടെ കണ്ണാടി</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">كَابُوسٌ</div><div class="vocab-en">Nightmare</div><div class="vocab-ml">കനവ് / ദുഃസ്വപ്നം</div></div>
+      </div>
+
+      <div class="activity-preview ml">📝 <b>പ്രവർത്തനങ്ങൾ · Activities:</b></div>
+
+      <div class="model-box">
+        <div class="model-label">1️⃣ ചോദ്യങ്ങൾ · Questions</div>
+        <div class="ml">
+          • أَحْمَدُ يَكْرَهُ طَابُورَ الْمَدْرَسَةِ وَقَوَانِينَ الْفَصْلِ<br>
+          • مِرْآةُ الْأَحْلَامِ نَقَلَتْهُ إِلَى عَالَمٍ بِلَا قَوَانِينَ<br>
+          • الْعَالَمُ بِلَا قَانُونٍ مَلِيءٌ بِالْفَوْضَى وَالْقُمَامَةِ وَالتَّدَافُعِ
+        </div>
+      </div>
+
+      <div class="model-box">
+        <div class="model-label">2️⃣ ട്രാഫിക് സിഗ്നലുകൾ · Traffic Signs</div>
+        <div class="ml">
+          مَمْنُوعُ الدَّرَّاجَاتِ · مَمْنُوعُ الْمُشَاةِ · مَمْنُوعُ الْوُقُوفِ · مَمْنُوعُ الِانْعِطَافِ إِلَى الْيَسَارِ · انْعَطِفْ يَسَارًا · مُنْعَطَفٌ إِلَى الْيَمِينِ
+        </div>
+      </div>
+
+      <div class="model-box">
+        <div class="model-label">3️⃣ ഗ്രാമർ · إِنَّ وَأَخَوَاتُهَا</div>
+        <div class="ar">
+          إِنَّ · أَنَّ · كَأَنَّ · لَكِنَّ · لَيْتَ · لَعَلَّ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 2: أنت المميز -->
+  <div class="section">
+    <h2 class="section-title ar">📜 الدَّرْسُ الْخَامِسُ</h2>
+    <div class="lesson-card" style="background:linear-gradient(135deg,#FFF3E0,#FFE0B2);border-color:#FFB74D;">
+      <span class="lesson-num" style="background:#E65100;">2</span>
+      <span class="lesson-title-ar ar" style="color:#E65100;">أَنْتَ الْمُمَيَّزُ</span>
+      <div class="lesson-title-ml ml">നീ മാതൃകയാണ് · You Are the Distinguished</div>
+      <div class="lesson-type" style="background:#E65100;">خُطْبَةٌ · Speech by د. أ. بِي. جِي. عَبْدُ الْكَلَامِ</div>
+      <div class="summary-text ml">
+        ഐ.ഐ.ടി. മദ്രാസിൽ നടത്തിയ പ്രസംഗം. യുവാക്കളോട്: നിങ്ങൾ “മാതൃകാ വ്യക്തിത്വം” (الذات الفريدة) ആകണം. ലോകം നിങ്ങളെ സാധാരണക്കാരാക്കാൻ ശ്രമിക്കും – അതിനെതിരെ പോരാടുക. വിജയത്തിന് നാല് ഉപകരണങ്ങൾ:
+        <br>1️⃣ ജീവിത ലക്ഷ്യം നിശ്ചയിക്കുക
+        <br>2️⃣ അറിവ് തുടർച്ചയായി നേടുക
+        <br>3️⃣ കഠിനാധ്വാനം ചെയ്യുക
+        <br>4️⃣ പരാജയം നിയന്ത്രിക്കുക (إدارة الفشل)
+      </div>
+
+      <div class="summary-text ar" style="background:#FFF8E1;padding:10px;border-radius:10px;margin-top:8px;font-size:1.05rem;">
+        يَا شَبَابِي، لَدَيْكُمْ قُوَّةُ الْأَفْكَارِ وَالطُّمُوحُ وَالْقُدْرَةُ عَلَى تَغْيِيرِ الْهِنْدِ إِلَى دَوْلَةٍ مُتَقَدِّمَةٍ. أَتَوَجَّهُ إِلَيْكُمْ بِأَطْيَبِ تَمَنِّيَاتِي لِتُصْبِحُوا كُلُّكُمْ رِجَالَ «الذَّاتِ الْفَرِيدَةِ».
+      </div>
+
+      <h4 class="ml" style="margin-top:14px;color:#0D47A1;">📚 പ്രധാന വാക്കുകൾ · Vocabulary</h4>
+      <div class="vocab-grid">
+        <div class="vocab-item"><div class="vocab-ar ar">الذَّاتُ الْفَرِيدَةُ</div><div class="vocab-en">The Unique Self</div><div class="vocab-ml">മാതൃകാ വ്യക്തിത്വം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">هَدَفٌ</div><div class="vocab-en">Goal</div><div class="vocab-ml">ലക്ഷ്യം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">اكْتِسَابُ الْمَعْرِفَةِ</div><div class="vocab-en">Acquisition of Knowledge</div><div class="vocab-ml">അറിവ് നേടൽ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">الْعَمَلُ الْجَادُّ</div><div class="vocab-en">Hard Work</div><div class="vocab-ml">കഠിനാധ്വാനം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مُثَابَرَةٌ</div><div class="vocab-en">Persistence</div><div class="vocab-ml">നിശ്ചയദാർഢ്യം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">إِدَارَةُ الْفَشَلِ</div><div class="vocab-en">Failure Management</div><div class="vocab-ml">പരാജയ നിയന്ത്രണം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">وَطَنِيَّةٌ</div><div class="vocab-en">Nationalism</div><div class="vocab-ml">ദേശഭക്തി</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">إِنْسَانِيَّةٌ</div><div class="vocab-en">Humanity</div><div class="vocab-ml">മാനവികത</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">صَرْحٌ</div><div class="vocab-en">Place / Stage</div><div class="vocab-ml">മഹത്തായ സ്ഥലം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">أَجْنِحَةٌ مِنْ نَارٍ</div><div class="vocab-en">Wings of Fire</div><div class="vocab-ml">അഗ്നിപക്ഷികൾ</div></div>
+      </div>
+
+      <div class="activity-preview ml">📝 <b>പ്രവർത്തനങ്ങൾ · Activities:</b></div>
+
+      <div class="model-box">
+        <div class="model-label">1️⃣ ഡോ. അബ്ദുൽ കലാം – സംക്ഷിപ്ത ജീവചരിത്രം</div>
+        <div class="ml">
+          • وُلِدَ ١٩٣١ م فِي رَامِيشْوَارَم (തമിഴ്‌നാട്)<br>
+          • التَحَقَ بِكُلِّيَّةِ هَنْدَسَةِ الطَّيَرَانِ بِمَدْرَاس<br>
+          • لُقِّبَ بِـ «رَجُلِ الصَّوَارِيخِ الْهِنْدِيِّ»<br>
+          • انْتُخِبَ رَئِيسًا لِجُمْهُورِيَّةِ الْهِنْدِ عَامَ ٢٠٠٢ م<br>
+          • تُوُفِّيَ ٢٧ يُولْيُو ٢٠١٥ م فِي شِيلُونْغ
+        </div>
+      </div>
+
+      <div class="model-box">
+        <div class="model-label">2️⃣ നാല് ഉപകരണങ്ങൾ · Four Tools for Success</div>
+        <div class="ar">
+          1. تَحْدِيدُ هَدَفِكَ فِي الْحَيَاةِ<br>
+          2. اكْتِسَابُ الْمَعْرِفَةِ بِاسْتِمْرَارٍ<br>
+          3. الْعَمَلُ الْجَادُّ بِتَفَانٍ<br>
+          4. الْمُثَابَرَةُ وَإِدَارَةُ الْفَشَلِ
+        </div>
+      </div>
+
+      <div class="model-box">
+        <div class="model-label">3️⃣ ബയോഗ്രഫി ചോദ്യങ്ങൾ · Questions about Abdul Kalam</div>
+        <div class="ml">
+          1. وُلِدَ فِي رَامِيشْوَارَم<br>
+          2. نَشَأَ مُحِبًّا لِلْعِلْمِ<br>
+          3. التَحَقَ بِكُلِّيَّةِ هَنْدَسَةِ الطَّيَرَانِ بِمَدْرَاس<br>
+          4. انْتُخِبَ رَئِيسًا عَامَ ٢٠٠٢ م<br>
+          5. لُقِّبَ بِرَجُلِ الصَّوَارِيخِ الْهِنْدِيِّ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 3: يقظة الروح -->
+  <div class="section">
+    <h2 class="section-title ar">🌴 الدَّرْسُ السَّادِسُ</h2>
+    <div class="lesson-card">
+      <span class="lesson-num">3</span>
+      <span class="lesson-title-ar ar">يَقْظَةُ الرُّوحِ</span>
+      <div class="lesson-title-ml ml">ആത്മാവിന്റെ ഉണർവ് · Wakefulness of the Spirit</div>
+      <div class="lesson-type">سِيرَةٌ ذَاتِيَّةٌ · Autobiography of Helen Keller</div>
+      <div class="summary-text ml">
+        ഹെലൻ കെല്ലർ (ജനനം: 27 ജൂൺ 1880, അലബാമ) കേൾവിയും കാഴ്ചയും നഷ്ടപ്പെട്ട ഒരു പെൺകുട്ടി. ടീച്ചർ ആനി സള്ളിവന്റെ സഹായത്തോടെ ഭാഷ പഠിച്ചു. “മفتاح اللغة” (ഭാഷയുടെ താക്കോൽ) കിട്ടിയപ്പോൾ അവൾ വളരെ ആവേശഭരിതയായി. “حب” എന്ന വാക്കിന്റെ അർത്ഥം ചോദിച്ചപ്പോൾ ടീച്ചർ അവളുടെ കൈയിൽ എഴുതി: «أَنَا أُحِبُّ هِيلِينَ».
+        <br><br>
+        <b>പ്രധാന സന്ദേശം:</b> «عِنْدَمَا يُغْلَقُ بَابٌ يُفْتَحُ آخَرُ» – ഒരു വാതിൽ അടയുമ്പോൾ മറ്റൊന്ന് തുറക്കുന്നു.
+      </div>
+
+      <h4 class="ml" style="margin-top:14px;color:#0D47A1;">📚 പ്രധാന വാക്കുകൾ · Vocabulary</h4>
+      <div class="vocab-grid">
+        <div class="vocab-item"><div class="vocab-ar ar">يَقْظَةُ الرُّوحِ</div><div class="vocab-en">Wakefulness of Spirit</div><div class="vocab-ml">ആത്മാവിന്റെ ഉണർവ്</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">أَصَمُّ</div><div class="vocab-en">Deaf</div><div class="vocab-ml">ബധിരൻ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">قُوَّةُ الْإِرَادَةِ</div><div class="vocab-en">Willpower</div><div class="vocab-ml">ഇച്ഛാശക്തി</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مُقَاوَمَةٌ</div><div class="vocab-en">Resistance</div><div class="vocab-ml">പ്രതിരോധം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مُعْجِزَةٌ</div><div class="vocab-en">Miracle</div><div class="vocab-ml">അത്ഭുതം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">تَحَدِّيَاتٌ جَسَدِيَّةٌ</div><div class="vocab-en">Physical Challenges</div><div class="vocab-ml">ശാരീരിക വെല്ലുവിളികൾ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">تَحَدِّيَاتٌ تَعْلِيمِيَّةٌ</div><div class="vocab-en">Learning Challenges</div><div class="vocab-ml">പഠന വെല്ലുവിളികൾ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">تَحَدِّيَاتٌ اجْتِمَاعِيَّةٌ</div><div class="vocab-en">Social Challenges</div><div class="vocab-ml">സാമൂഹിക വെല്ലുവിളികൾ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">نَاشِطَةٌ</div><div class="vocab-en">Activist</div><div class="vocab-ml">പ്രവർത്തക</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مِفْتَاحُ اللُّغَةِ</div><div class="vocab-en">Key to Language</div><div class="vocab-ml">ഭാഷയുടെ താക്കോൽ</div></div>
+      </div>
+
+      <div class="activity-preview ml">📝 <b>പ്രവർത്തനങ്ങൾ · Activities:</b></div>
+
+      <div class="model-box">
+        <div class="model-label">1️⃣ ഹെലൻ കെല്ലറുടെ വെല്ലുവിളികൾ</div>
+        <div class="ml">
+          • التَّحَدِّيَاتُ الْجَسَدِيَّةُ – ശാരീരികം<br>
+          • التَّحَدِّيَاتُ التَّعْلِيمِيَّةُ – പഠനം<br>
+          • التَّحَدِّيَاتُ الاجْتِمَاعِيَّةُ – സാമൂഹികം
+        </div>
+      </div>
+
+      <div class="model-box">
+        <div class="model-label">2️⃣ പ്രചോദനാത്മക വാചകങ്ങൾ · Motivational Phrases</div>
+        <div class="ar">
+          1. قُوَّتُكَ فِي إِرَادَتِكَ، لَا فِي حُدُودِكَ<br>
+          2. عِنْدَمَا يُغْلَقُ بَابٌ يُفْتَحُ آخَرُ<br>
+          3. الْإِرَادَةُ تَصْنَعُ الْمُعْجِزَاتِ
+        </div>
+      </div>
+
+      <div class="model-box">
+        <div class="model-label">3️⃣ ക്രിയാ പട്ടിക · Verb Forms (Example)</div>
+        <table class="simple">
+          <tr><th>الْمَاضِي</th><th>الْمُضَارِعُ</th><th>الْأَمْرُ</th><th>النَّهْيُ</th></tr>
+          <tr><td>سَمِعَ</td><td>يَسْمَعُ</td><td>اسْمَعْ</td><td>لَا تَسْمَعْ</td></tr>
+          <tr><td>بَدَأَ</td><td>يَبْدَأُ</td><td>ابْدَأْ</td><td>لَا تَبْدَأْ</td></tr>
+          <tr><td>حَصَلَ</td><td>يَحْصُلُ</td><td>احْصُلْ</td><td>لَا تَحْصُلْ</td></tr>
+          <tr><td>تَعَلَّمَ</td><td>يَتَعَلَّمُ</td><td>تَعَلَّمْ</td><td>لَا تَتَعَلَّمْ</td></tr>
+          <tr><td>قَبَّلَ</td><td>يُقَبِّلُ</td><td>قَبِّلْ</td><td>لَا تُقَبِّلْ</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY VALUES -->
+  <div class="section">
+    <h2 class="section-title ar">💎 الْقِيَمُ وَالْمَفَاهِيمُ · പ്രധാന മൂല്യങ്ങൾ</h2>
+    <div class="values-box">
+      <h4 class="ml">🌟 ഈ യൂണിറ്റിൽ നിന്ന് പഠിക്കേണ്ടത്:</h4>
+      <div class="values-list">
+        ✅ <b>قُوَّةُ الْإِرَادَةِ</b> – ഇച്ഛാശക്തി അത്ഭുതങ്ങൾ സൃഷ്ടിക്കുന്നു (ഹെലൻ കെല്ലർ)<br>
+        ✅ <b>الذَّاتُ الْفَرِيدَةُ</b> – ഓരോരുത്തരും മാതൃകാ വ്യക്തിത്വമാകണം (അബ്ദുൽ കലാം)<br>
+        ✅ <b>أَهَمِّيَّةُ الْقَانُونِ</b> – നിയമമില്ലാത്ത ലോകം അരാജകത്വമാണ്<br>
+        ✅ <b>اكْتِسَابُ الْمَعْرِفَةِ + الْعَمَلُ الْجَادُّ</b> – അറിവും അധ്വാനവും വിജയത്തിന്റെ താക്കോൽ<br>
+        ✅ <b>إِدَارَةُ الْفَشَلِ</b> – പരാജയത്തിൽ നിന്ന് പഠിക്കുക, നിരാശപ്പെടാതിരിക്കുക
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK REVISION -->
+  <div class="section">
+    <h2 class="section-title ar">🔄 مُرَاجَعَةٌ سَرِيعَةٌ · ദ്രുത പുനരവലോകനം</h2>
+    <div class="activity-preview ml"><b>1.</b> ആദ്യ പാഠം? → <span class="highlight">عَالَمٌ بِلَا قَانُونٍ</span> (د. وفاء الشامسي)</div>
+    <div class="activity-preview ml"><b>2.</b> രണ്ടാം പാഠം? → <span class="highlight">أَنْتَ الْمُمَيَّزُ</span> (أ. بِي. جِي. عَبْدُ الْكَلَامِ)</div>
+    <div class="activity-preview ml"><b>3.</b> മൂന്നാം പാഠം? → <span class="highlight">يَقْظَةُ الرُّوحِ</span> (Helen Keller)</div>
+    <div class="activity-preview ml"><b>4.</b> വിജയത്തിന്റെ 4 ഉപകരണങ്ങൾ? → <span class="highlight">ഹദഫ് + അറിവ് + അധ്വാനം + പരാജയ നിയന്ത്രണം</span></div>
+    <div class="activity-preview ml"><b>5.</b> ഹെലൻ കെല്ലറുടെ പ്രശസ്ത വാചകം? → <span class="highlight">عِنْدَمَا يُغْلَقُ بَابٌ يُفْتَحُ آخَرُ</span></div>
+    <div class="activity-preview ml"><b>6.</b> അബ്ദുൽ കലാമിന്റെ ബുക്ക്? → <span class="highlight">أَجْنِحَةٌ مِنْ نَارٍ (Wings of Fire)</span></div>
+  </div>
+
+  <!-- VOCABULARY TABLE -->
+  <div class="section">
+    <h2 class="section-title ar">📖 مَعَانِي الْمُفْرَدَاتِ · പ്രധാന പദാവലി</h2>
+    <table class="simple">
+      <tr><th>English</th><th>العربية</th><th>English</th><th>العربية</th></tr>
+      <tr><td>Failure Management</td><td>إِدَارَةُ الْفَشَلِ</td><td>Rule / Regulation</td><td>قَانُونٌ (ج) قَوَانِينُ</td></tr>
+      <tr><td>Aerospace Engineering</td><td>هَنْدَسَةُ الطَّيَرَانِ</td><td>Corner</td><td>زَاوِيَةٌ (ج) زَوَايَا</td></tr>
+      <tr><td>Rocket</td><td>صَارُوخٌ (ج) صَوَارِيخُ</td><td>Queue / Assembly</td><td>طَابُورٌ (ج) طَوَابِيرُ</td></tr>
+      <tr><td>Satellites</td><td>الْأَقْمَارُ الصِّنَاعِيَّةُ</td><td>Interval</td><td>فُسْحَةٌ (ج) فُسَحٌ</td></tr>
+      <tr><td>Wings of Fire</td><td>أَجْنِحَةٌ مِنْ نَارٍ</td><td>Traffic Signal</td><td>إِشَارَةُ الْمُرُورِ</td></tr>
+      <tr><td>Identity Card</td><td>بِطَاقَةُ هُوِيَّةٍ</td><td>Mirror of Dreams</td><td>مِرْآةُ الْأَحْلَامِ</td></tr>
+      <tr><td>Nationality</td><td>جِنْسِيَّةٌ</td><td>Hurray</td><td>مَرْحَى</td></tr>
+      <tr><td>Willpower</td><td>قُوَّةُ الْإِرَادَةِ</td><td>Garbage</td><td>قُمَامَةٌ</td></tr>
+      <tr><td>Activist</td><td>نَاشِطٌ (ج) نَاشِطُونَ</td><td>Stampede</td><td>التَّدَافُعُ</td></tr>
+      <tr><td>Miracle</td><td>مُعْجِزَةٌ (ج) مُعْجِزَاتٌ</td><td>The Unique Self</td><td>الذَّاتُ الْفَرِيدَةُ</td></tr>
+    </table>
+  </div>
+
+  <div class="footer-note">
+    <p class="ar" style="font-size:1.2rem;">💪 قُوَّةُ الْإِرَادَةِ · الذَّاتُ الْفَرِيدَةُ · أَهَمِّيَّةُ الْقَانُونِ 💪</p>
+    <p>Willpower · Unique Self · Importance of Law</p>
+    <p style="margin-top:10px;font-size:.9rem;">Kerala Plus One Arabic · Unit 2 Full Summary</p>
+    <p style="font-size:.85rem;opacity:.9;margin-top:4px;">Created By KATF STATE IT WING</p>
+  </div>
+</div>
+
+<script>
+async function downloadSummaryPDF() {
+  const btn = document.querySelector('.pdf-btn');
+  const orig = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = '⏳ Preparing PDF...';
+  try {
+    const el = document.getElementById('summaryContent');
+    const canvas = await html2canvas(el, { scale: 2, backgroundColor: '#ffffff', useCORS: true });
+    const img = canvas.toDataURL('image/jpeg', 0.95);
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF('p', 'pt', 'a4');
+    const pw = pdf.internal.pageSize.getWidth();
+    const ph = pdf.internal.pageSize.getHeight();
+    const iw = pw;
+    const ih = canvas.height * iw / canvas.width;
+    let hLeft = ih, pos = 0;
+    pdf.addImage(img, 'JPEG', 0, pos, iw, ih);
+    hLeft -= ph;
+    while (hLeft > 0) {
+      pos = hLeft - ih;
+      pdf.addPage();
+      pdf.addImage(img, 'JPEG', 0, pos, iw, ih);
+      hLeft -= ph;
+    }
+    pdf.save('PlusOne_Unit2_Summary.pdf');
+  } catch (e) {
+    alert('PDF error: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = orig;
+  }
+}
+</script>
+</body>
+</html>
